@@ -1,16 +1,2 @@
-#content {
-    display: flex;
-    position: fixed;
-	left: 0; right: 0; top: 0; bottom: 0;
-    z-index: -50;
-    background-color: #4A7CE9;
-    color: #FFF;
-    user-select: none;
-    // cursor: none;
-}
-
-#pointer {
-    position: absolute;
-    background: url("../assets/icons/pointerCursor.svg") no-repeat; height: 100%; width: 100%;
-    background-size: 3%;
-}
+@import './widgets/VolumeIndicator.scss';
+@import './widgets/VolumeBtn.scss';

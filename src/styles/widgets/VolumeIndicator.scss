@@ -1,0 +1,12 @@
+.kkcdplayer-volumeindicator {
+    @mixin volume-icon($status) {
+        @at-root .kkcdplayer-volumeindicator-#{$status} {
+            content: url('~@assets/img/volume_#{$status}.png');
+        }
+    }
+
+    @include volume-icon('none');
+    @include volume-icon('low');
+    @include volume-icon('middle');
+    @include volume-icon('high');
+}

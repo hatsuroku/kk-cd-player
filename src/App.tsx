@@ -1,14 +1,10 @@
 import React from 'react';
 import '@styles/app.scss';
-const waveArr = ["wave1", "wave2", "wave3"];
-const waves = waveArr.map(item => require(`@assets/waves/${item}.svg`));
+
+import Volume from '@/widgets/Volume';
 
 function App() {
-    return (
-        <div id="content">
-            <div id="pointer" />
-        </div>
-    );
+    return <Volume />;
 }
 
 export default App;
