@@ -1,11 +1,16 @@
 import React from 'react';
-const waveArr = ["wave1", "wave2", "wave3"];
-const waves = waveArr.map(item => require(`@assets/img/waves/${item}.svg`));
+import classNames from "classnames";
 
-const Background: React.FC = () => {
+interface BackgroundStatus {
+    playing: boolean;
+}
+
+const Background: React.FC<BackgroundStatus> = ({ playing }: BackgroundStatus) => {
     return (
-        <div className="kkcdplayer-background">
-
+        <div className={classNames('kkcdplayer-background', playing ? 'playing' : '')}>
+            <div className="kkcdplayer-background-wave1"  />
+            <div className="kkcdplayer-background-wave2"  />
+            <div className="kkcdplayer-background-wave3"  />
         </div>
     );
 };

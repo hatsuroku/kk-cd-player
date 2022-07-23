@@ -7,7 +7,7 @@ import Volume from '@/widgets/Volume';
 function App() {
     return (
         <>
-            <Background />
+            <Background playing={true} />
             <Volume />
         </>
     );
