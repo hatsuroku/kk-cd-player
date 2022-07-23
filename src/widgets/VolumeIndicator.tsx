@@ -7,7 +7,7 @@ export interface VolumeIndicatorProps {
 }
 
 const VolumeIndicator: React.FC<VolumeIndicatorProps> = ({ volume }: VolumeIndicatorProps) => {
-    return <VolumeIcon className={`kkcdplayer-volumeindicator-${volume}`} />;
+    return <VolumeIcon className={classNames('kkcdplayer-volumeindicator', `volumestatus-${volume}`)} />;
 };
 
 export default VolumeIndicator;

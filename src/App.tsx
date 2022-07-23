@@ -1,9 +1,13 @@
 import React from 'react';
 import '@styles/app.scss';
-import Volume from '@/widgets/Volume';
+import Title from '@/components/title';
 
 function App() {
-    return <Volume />;
+    return (
+        <>
+            <Title />
+        </>
+    );
 }
 
 export default App;

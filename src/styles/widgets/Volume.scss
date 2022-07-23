@@ -1,0 +1,23 @@
+@import '../constants.scss';
+
+.kkcdplayer-volume {
+    display: flex;
+    align-items: center;
+
+    @at-root .kkcdplayer-volumeindicator {
+        margin: 0 24px;
+    }
+
+    @media screen and (max-width: $pad_max) {
+        @at-root .kkcdplayer-volumeindicator {
+            margin: 0 12px;
+        }
+    }
+
+    @media screen and (max-width: $phone_max) {
+        display: none;
+        // @at-root .kkcdplayer-volumeindicator {
+        //     margin: 0 12px;
+        // }
+    }
+}

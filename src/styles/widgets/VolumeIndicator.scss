@@ -1,10 +1,10 @@
-.kkcdplayer-volumeindicator {
-    %size {
-        width: 72px;
-        height: 58px;
-    }
+@import '../constants.scss';
 
-    &-none {
+.kkcdplayer-volumeindicator {
+    width: 72px;
+    height: 58px;
+
+    &.volumestatus-none {
         & > path.volume-low {
             fill: #c6dfd2;
         }
@@ -14,23 +14,25 @@
         & > path.volume-high {
             fill: #c6dfd2;
         }
-        @extend %size;
     }
 
-    &-low {
+    &.volumestatus-low {
         & > path.volume-middle {
             fill: #c6dfd2;
         }
         & > path.volume-high {
             fill: #c6dfd2;
         }
-        @extend %size;
     }
 
-    &-middle {
+    &.volumestatus-middle {
         & > path.volume-high {
             fill: #c6dfd2;
         }
-        @extend %size;
+    }
+
+    @media screen and (max-width: $pad_max) {
+        width: 42px;
+        height: 25px;
     }
 }
