@@ -10,7 +10,7 @@ interface CursorPosition {
 
 const Cursor: React.FC<CursorPosition> = ({ byScript, positionX, positionY, onClick }: CursorPosition) => {
     return (
-        <div />
+        <div className={classNames('kkcdplayer-cursor','kkcdplayer-cursor-normal')} />
     );
 };
 
