@@ -1,5 +1,7 @@
 import React, { MouseEventHandler } from 'react';
 import classNames from 'classnames';
+import { ReactComponent as IncIcon } from '@img/increase.svg';
+import { ReactComponent as DecIcon } from '@img/decrease.svg';
 
 interface VolumeBtnProps {
     disabled: boolean;
@@ -8,12 +10,9 @@ interface VolumeBtnProps {
 }
 
 const VolumeBtn: React.FC<VolumeBtnProps> = ({ usage, disabled, onClick }: VolumeBtnProps) => {
-    return (
-        <img
-            className={classNames(`kkcdplayer-volumeindicator-${usage}-${disabled ? 'disabled' : 'normal'}`)}
-            onClick={onClick}
-        ></img>
-    );
+    const Icon = usage === 'increase' ? IncIcon : DecIcon;
+
+    return <Icon className={classNames('kkcdplayer-volumebtn', disabled ? 'disabled' : 'normal')} onClick={onClick}></Icon>;
 };
 
 export default VolumeBtn;
