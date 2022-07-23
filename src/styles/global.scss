@@ -1,5 +1,15 @@
-.kkcdplayer {
-    &-block {
-        display: block;
-    }
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
