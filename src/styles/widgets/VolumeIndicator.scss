@@ -1,12 +1,38 @@
+@import '../constants.scss';
+
 .kkcdplayer-volumeindicator {
-    @mixin volume-icon($status) {
-        @at-root .kkcdplayer-volumeindicator-#{$status} {
-            content: url('~@assets/img/volume_#{$status}.png');
+    width: 72px;
+    height: 58px;
+
+    &.volumestatus-none {
+        & > path.volume-low {
+            fill: #c6dfd2;
+        }
+        & > path.volume-middle {
+            fill: #c6dfd2;
+        }
+        & > path.volume-high {
+            fill: #c6dfd2;
         }
     }
 
-    @include volume-icon('none');
-    @include volume-icon('low');
-    @include volume-icon('middle');
-    @include volume-icon('high');
+    &.volumestatus-low {
+        & > path.volume-middle {
+            fill: #c6dfd2;
+        }
+        & > path.volume-high {
+            fill: #c6dfd2;
+        }
+    }
+
+    &.volumestatus-middle {
+        & > path.volume-high {
+            fill: #c6dfd2;
+        }
+    }
+
+    @media screen and (max-width: $pad_max) {
+        width: 42px;
+        height: 25px;
+    }
 }

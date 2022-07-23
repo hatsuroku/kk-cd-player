@@ -7,7 +7,7 @@ const Volume: React.FC = () => {
     const [status, setStatus] = useState(0);
 
     return (
-        <div>
+        <div className='kkcdplayer-volume'>
             <VolumeBtn
                 disabled={status === 0}
                 usage="decrease"

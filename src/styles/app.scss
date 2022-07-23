@@ -1,7 +1,10 @@
-@import 'global.scss';
+@import './global.scss';
+@import './displayControl.scss';
 
-@import "widgets/Cursor";
 @import './widgets/VolumeIndicator.scss';
 @import './widgets/VolumeBtn.scss';
+@import './widgets/Volume.scss';
+@import './widgets/Cursor';
 
-@import "./components/background.scss";
+@import './components/title.scss';
+@import './components/background.scss';

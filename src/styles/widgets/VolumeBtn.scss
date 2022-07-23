@@ -1,12 +1,17 @@
+@import '../constants.scss';
+
 .kkcdplayer-volumebtn {
-    @mixin volume-btn-icon($usage, $status) {
-        @at-root .kkcdplayer-volumeindicator-#{$usage}-#{$status} {
-            content: url('~@assets/img/#{$usage}_#{$status}.png');
+    width: 40px;
+    height: 40px;
+
+    &.disabled {
+        & > path {
+            fill: #95b5c4;
         }
     }
 
-    @include volume-btn-icon('increase', 'normal');
-    @include volume-btn-icon('increase', 'disabled');
-    @include volume-btn-icon('decrease', 'normal');
-    @include volume-btn-icon('decrease', 'disabled');
+    @media screen and (max-width: $pad_max) {
+        width: 24px;
+        height: 24px;
+    }
 }
