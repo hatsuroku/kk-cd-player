@@ -4,7 +4,14 @@
 @import './widgets/VolumeIndicator.scss';
 @import './widgets/VolumeBtn.scss';
 @import './widgets/Volume.scss';
-@import './widgets/Cursor';
 
 @import './components/title.scss';
 @import './components/background.scss';
+
+.kkcdplayer-top-container {
+    cursor: url('~@img/cursor.svg'), auto;
+
+    &.cursor-down {
+        cursor: url('~@img/cursor_down.svg'), auto;
+    }
+}

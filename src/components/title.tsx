@@ -4,7 +4,7 @@ import Volume from '@/widgets/Volume';
 const Title: React.FC = () => {
     return (
         <div className="kkcdplayer-title">
-            nihao
+            aaaaaaaaaaaaaa
             <Volume />
         </div>
     );
