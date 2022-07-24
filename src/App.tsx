@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import classNames from 'classnames';
+
 import '@styles/app.scss';
 
 import Background from '@/components/Background';
 import Title from '@/components/title';
-import Cursor from '@/widgets/cursor';
 
 function App() {
+    const [mouseDown, setMouseDown] = useState(false);
+
     return (
-        <>
+        <div
+            className={classNames('kkcdplayer-top-container', {
+                'cursor-down': mouseDown,
+            })}
+            onMouseDown={(e) => {
+                // 0 鼠标左键
+                if (e.button === 0) {
+                    setMouseDown(true);
+                }
+            }}
+            onMouseUp={() => setMouseDown(false)}
+        >
             <Background playing={true} />
-            <Cursor byScript={false} positionX={0} positionY={0} />
             <Title />
-        </>
+        </div>
     );
 }
 
