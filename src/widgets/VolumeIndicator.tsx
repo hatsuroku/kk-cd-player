@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { ReactComponent as VolumeIcon } from '@img/volume_indicator.svg';
+import { ReactComponent as VolumeIcon } from '@img/title/volume_indicator.svg';
 
 export interface VolumeIndicatorProps {
     volume: 'none' | 'low' | 'middle' | 'high';

@@ -1,7 +1,7 @@
 import React, { MouseEventHandler } from 'react';
 import classNames from 'classnames';
-import { ReactComponent as IncIcon } from '@img/increase.svg';
-import { ReactComponent as DecIcon } from '@img/decrease.svg';
+import { ReactComponent as IncIcon } from '@img/title/increase.svg';
+import { ReactComponent as DecIcon } from '@img/title/decrease.svg';
 
 interface VolumeBtnProps {
     disabled: boolean;

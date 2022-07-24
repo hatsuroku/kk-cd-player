@@ -1,7 +1,7 @@
 @import '../constants.scss';
 
 .kkcdplayer-title {
-    background: url('~@img/title_bg#{$pc_suffix}.svg');
+    background: url('~@img/title/title_bg#{$pc_suffix}.svg');
     background-size: cover;
     height: 107px;
     width: 1148px;
@@ -15,7 +15,7 @@
     top: 37px;
 
     @media screen and (max-width: $pad_max) {
-        background: url('~@img/title_bg#{$land_suffix}.svg');
+        background: url('~@img/title/title_bg#{$land_suffix}.svg');
         height: 59px;
         width: 632px;
         padding: 0 17px;
@@ -24,7 +24,7 @@
     }
 
     @media screen and (max-width: $phone_max) {
-        background: url('~@img/title_bg#{$port_suffix}.svg');
+        background: url('~@img/title/title_bg#{$port_suffix}.svg');
         height: 59px;
         width: 358px;
         left: min(20px, calc((100vw - 358px) / 2));

@@ -1,4 +1,4 @@
-import React, { FC, useRef, useState, useEffect } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 import classNames from 'classnames';
 
 interface CursorImgProps {
@@ -34,7 +34,7 @@ const Cursor = () => {
     const onMouseUp = () => {
         setPoke(false);
     };
-    const onMouseMove = (e: any) => {
+    const onMouseMove = (e: MouseEvent) => {
         setPosition({ x: e.clientX - 10, y: e.clientY - 10 });
     };
 
