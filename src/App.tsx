@@ -8,7 +8,7 @@ import Cursor from '@/widgets/Cursor';
 
 function App() {
     return (
-        <div>
+        <div onContextMenu={ e => e.preventDefault() }>
             <Background playing={true} />
             <Title />
             <Cursor />
