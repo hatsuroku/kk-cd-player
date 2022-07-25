@@ -28,8 +28,9 @@ const Cursor = () => {
     const [position, setPosition] = useState({ x: 100, y: 100 });
     const [poke, setPoke] = useState(false);
 
-    const onMouseDown = () => {
-        setPoke(true);
+    const onMouseDown = (e: MouseEvent) => {
+        // Prevent other keys from triggering animation "e.button -> mouse left key"
+        if(e.button === 0) setPoke(true);
     };
     const onMouseUp = () => {
         setPoke(false);
