@@ -1,0 +1,5 @@
+﻿serial,name_en,name_zh,name_jp,coverImg,live,aircheck,music_box,dj_kk_remix,nes_remix,description
+1,KK Chorale,K.K.赞美诗歌,けけさんびか,https://cover-img.png,https://song-of-live-version.flac,https://song-of-aircheck-version.flac,https://song-of-music_box-version.flac,https://song-of-kk_remix-version.flac,https://song-of-nes_remix-version.flac,
+2,KK March,K.K.进行曲,けけマーチ,https://cover-img.png,https://song-of-live-version.flac,https://song-of-aircheck-version.flac,https://song-of-music_box-version.flac,https://song-of-kk_remix-version.flac,https://song-of-nes_remix-version.flac,"{“en”: ""test"", ""zh"": ""测试"", ""jp"": ""テスト""}"
+3,K.K. Waltz,K.K.圆舞曲,けけワルツ,https://cover-img.png,https://song-of-live-version.flac,https://song-of-aircheck-version.flac,https://song-of-music_box-version.flac,https://song-of-kk_remix-version.flac,https://song-of-nes_remix-version.flac,
+4,K.K. Swing,K.K.摇摆乐,けけスウィング,https://cover-img.png,https://song-of-live-version.flac,https://song-of-aircheck-version.flac,https://song-of-music_box-version.flac,,,
