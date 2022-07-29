@@ -104,7 +104,7 @@ function taskManager (list) {
         if (idle() && haveAnyTask()) {
             const current = unfinishedList.shift();
             activeThreads++;
-            console.log('已新建任务:', current+".", "还有", unfinishedList.length, "个任务");
+            console.log(`已新建任务: ${current.name_en}，还有 ${unfinishedList.length} 个任务`);
             taskAllocator(current)
                 .then(() => {
                     finishedList.splice(current.serial - 1, 0,{
@@ -135,7 +135,7 @@ function taskManager (list) {
         }
         if (idle() && !haveAnyTask()) {
             clearInterval(pollingTimer)
-            genJSON(finishedList)
+            setTimeout(() => { genJSON(finishedList) }, 100)
         }
     }, 10)
 }
