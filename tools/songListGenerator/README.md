@@ -1,4 +1,4 @@
-# Song list generator
+# Song list generator (已弃用)
 
 本工具可完成该项目中大量 K.K. 音频资源和图像资源的批量下载和列表生成。  
 使用后，列表 JSON 文件和资源文件将分别生成或下载至本目录，方便进一步上传至 CDN 或对象存储。
